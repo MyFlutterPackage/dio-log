@@ -4,7 +4,6 @@ import 'package:dio/dio.dart';
 import 'package:dio_log/bean/net_options.dart';
 import 'package:dio_log/utils/copy_clipboard.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_json_view/flutter_json_view.dart';
 import '../dio_log.dart';
 
 class LogRequestWidget extends StatefulWidget {
@@ -86,8 +85,7 @@ class _LogRequestWidgetState extends State<LogRequestWidget>
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         _getDefText('${key.toString().toUpperCase()}:'),
-        JsonView.map(json),
-        // JsonViews(json: json),
+        JsonViews(json: json),
       ],
     );
   }

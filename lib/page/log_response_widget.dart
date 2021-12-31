@@ -2,7 +2,6 @@ import 'package:dio_log/bean/net_options.dart';
 import 'package:dio_log/dio_log.dart';
 import 'package:dio_log/widget/json_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_json_view/flutter_json_view.dart';
 
 class LogResponseWidget extends StatefulWidget {
   final NetOptions netOptions;
